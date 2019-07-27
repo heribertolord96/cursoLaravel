@@ -45,3 +45,23 @@ Menú
     </div>
 </div> 
 @endsection
+
+{{-- @section('contenido')
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box box-primary">
+@@ -22,7 +67,7 @@
+                            <td>{{$menu->id}}</td>
+                            <td>{{$menu->nombre}}</td>
+                            <td>{{$menu->url}}</td>
+                            <td></td>
+                            <td>{{$menu->icono}}</td>
+                        </tr>
+                        @endforeach 
+                    </tbody>
+@@ -31,4 +76,4 @@
+            </div>
+        </div>
+    </div>
+@endsection 
+@endsection --}} 
