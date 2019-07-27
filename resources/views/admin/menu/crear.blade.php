@@ -3,9 +3,15 @@
 @section('titulo')
     Menu
 @endsection
-@section('contenido')
+@section('scripts')
+<script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript"></script>
+@endsection
+@section('contenido') 
 <div class="col-lg-12">
+ 
     <div class="card  card-danger col-lg-12 ">
+        @include('includes.mensaje')
+        @include('includes.form-error')
             <div class="card-header">
               <h3 class="card-title"> Crear Menus</h3>
             </div>

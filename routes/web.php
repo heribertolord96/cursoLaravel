@@ -20,6 +20,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'],function(){
     //Rutas de permiso
     Route::get('permiso','PermisoController@index')->name('permiso');
     Route::get('/','PermisoController@crear')->name ('crear_permiso');
+    Route::post('permiso','PermisoController@guardar')->name('guardar_permiso');
     //Rutas de Menu
     Route::get('menu/crear','MenuController@crear')->name('crear_menu');
     Route::post('menu','MenuController@guardar')->name('guardar_menu');
