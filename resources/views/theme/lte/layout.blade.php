@@ -15,6 +15,8 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset ("assets/$theme/dist/css/adminlte.min.css")}}">
   <link rel="stylesheet" href="{{asset ("assets/$theme/dist/css/adminlte.min.css")}}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   @yield('styles')
   <link rel="stylesheet" href="{{asset ("assets/css/custom.css")}}">
   

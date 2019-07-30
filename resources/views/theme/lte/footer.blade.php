@@ -25,6 +25,10 @@
 <!--Plugins de validation-->
 <script src="{{asset("assets/js/jqery-validation/core.js")}}"></script>
     <script src="{{asset("assets/js/jqery-validation/localization/messages_es.js")}}"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script src="{{asset("assets/js/scripts.js")}}"></script>
     <script src="{{asset("assets/js/funciones.js")}}"></script>
     <!--Plugins de validation-->

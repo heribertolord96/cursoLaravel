@@ -4,10 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Admin\Menu;
-use App\Http\Requests\ValidacionMenu;
 
-class MenuController extends Controller
+class MenuRolController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,14 +14,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus=Menu::orderBy('id')->get();
-        
-        $menus=Menu::getMenu();
-        //dd($menus);
-        
-        //$menus=Menu::orderBy('id')->get();
-        return view('admin.menu.index',compact('menus'));
-
+        //
     }
 
     /**
@@ -31,9 +22,9 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function crear()
+    public function create()
     {
-        return view('admin.menu.crear');
+        //
     }
 
     /**
@@ -42,12 +33,9 @@ class MenuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function guardar(ValidacionMenu $request)
+    public function store(Request $request)
     {
-        Menu::create($request->all());
-        return redirect('admin/menu/crear')->with('mensaje','Menú agregado correctamente.');
-        return redirect('admin/menu')->with('mensaje','Menú agregado correctamente.'); //admin/menu/crear
-        //dd($request->all());   
+        //
     }
 
     /**
@@ -56,7 +44,7 @@ class MenuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function mostrar($id)
+    public function show($id)
     {
         //
     }
@@ -67,7 +55,7 @@ class MenuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function editar($id)
+    public function edit($id)
     {
         //
     }
@@ -79,7 +67,7 @@ class MenuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function actualizar(Request $request, $id)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -90,18 +78,8 @@ class MenuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function eliminar($id)
+    public function destroy($id)
     {
         //
-    }
-    public function guardarOrden(Request $request)
-    {
-        if ($request->ajax()) {
-            $menu = new Menu;
-            $menu->guardarOrden($request->menu);
-            return response()->json(['respuesta' => 'ok']);
-        } else {
-            abort(404);
-        }
     }
 }
