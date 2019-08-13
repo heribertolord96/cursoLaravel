@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset ("assets/$theme/dist/css/adminlte.min.css")}}">
-  <link rel="stylesheet" href="{{asset ("assets/$theme/dist/css/adminlte.min.css")}}">
+  <link rel="stylesheet" href="{{asset ("assets/$theme/dist/css/bootstrap.min.css")}}">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   @yield('styles')

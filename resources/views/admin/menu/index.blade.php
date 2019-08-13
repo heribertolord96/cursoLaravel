@@ -19,16 +19,16 @@ Menú
 <div class="row">
     <div class="col-lg-12">
         @include('includes.mensaje')
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Menús</h3>
-                <div class="box-tool pull-right">
+        <div class="card card-success">
+            <div class="card-header with-border">
+                <h3 class="card-title">Menús</h3>
+                <div class="card-tool pull-right">
                     <a href="{{route('crear_menu')}}" class="btn btn-block btn-info btn-sm">
                         <i class="fa fa-fw fa-plus-circle"></i> Crear Nuevo Menú
                     </a>
                 </div>
             </div>
-            <div class="box-body">
+            <div class="card-body">
                 @csrf
                 <div class="dd" id="nestable">
                     <ol class="dd-list">
@@ -49,7 +49,7 @@ Menú
 {{-- @section('contenido')
 <div class="row">
     <div class="col-lg-12">
-        <div class="box box-primary">
+        <div class="card card-primary">
 @@ -22,7 +67,7 @@
                             <td>{{$menu->id}}</td>
                             <td>{{$menu->nombre}}</td>

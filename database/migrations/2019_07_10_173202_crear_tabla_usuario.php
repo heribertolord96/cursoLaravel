@@ -16,7 +16,7 @@ class CrearTablaUsuario extends Migration
         Schema::create('usuario', function(Blueprint $table){
             $table->Increments('id');
             $table->string('usuario',50);
-            $table->string('password',10);
+            $table->string('password',255);
             $table->string('nombre',50);
             $table->timestamps();
             $table->charset='utf8mb4';

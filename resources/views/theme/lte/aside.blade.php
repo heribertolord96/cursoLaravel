@@ -16,7 +16,10 @@
                  <img src="{{asset ("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
               </div>
               <div class="info">
-                 <a href="#" class="d-block">Alexander Pierce</a>
+                 <a href="#" class="d-block"> {{session()->get('nombre_usuario')}} </a>
+              </div>
+              <div class="pull-right">
+              <a href="{{route('logout')}}" class="btn btn-default btn-flat">Salir</a>
               </div>
            </div>
            <!-- Sidebar Menu -->
@@ -340,7 +343,7 @@
                           </a>
                        </li>
                        <li class="nav-item">
-                          <a href="{{asset ("assets/$theme/starter.html" class="nav-link">
+                          <a href="{{asset ("assets/$theme/starter.html")}}" class="nav-link">
                              <i class="far fa-circle nav-icon"></i>
                              <p>Starter Page</p>
                           </a>
